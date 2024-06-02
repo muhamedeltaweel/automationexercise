@@ -15,7 +15,7 @@ import registerUserPages.Signup;
 
 import java.time.Duration;
 
-public class RegisterUser {
+public class RegisterUserTC1 {
 
     WebDriver driver ;
 
@@ -99,7 +99,7 @@ public class RegisterUser {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
         homePage = new Home(driver);
-        signUpPage =  new  Signup(driver);
+        signUpPage =  new Signup(driver);
         accountInfo =  new  AccountInfo(driver);
         confirmation =  new  Confirmation(driver);
         homeAfterSign =  new HomeAfterSign(driver);

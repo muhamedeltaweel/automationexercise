@@ -7,7 +7,7 @@ public class Signup {
 
     WebDriver driver;
 
-    public Signup (WebDriver driver){
+    public Signup(WebDriver driver){
 
         this.driver = driver;
     }
