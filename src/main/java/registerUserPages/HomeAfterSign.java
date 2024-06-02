@@ -1,4 +1,4 @@
-package homeAfterSignUp;
+package registerUserPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

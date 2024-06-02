@@ -1,17 +1,17 @@
 package registerUserTest;
 
-import accountInfo.AccountInfo;
-import confirmation.Confirmation;
-import delete.Delete;
-import home.Home;
-import homeAfterSignUp.HomeAfterSign;
+import registerUserPages.AccountInfo;
+import registerUserPages.Confirmation;
+import registerUserPages.Delete;
+import registerUserPages.Home;
+import registerUserPages.HomeAfterSign;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import signup.Signup;
+import registerUserPages.Signup;
 
 import java.time.Duration;
 
@@ -38,7 +38,7 @@ public class RegisterUser {
         homePage.navigate();
         homePage.clickSignUpButton();
         Assert.assertEquals(signUpPage.checkSignUptext(),"New User Signup!");
-        signUpPage.signUpForm("Automate","te9009@yahoo.com");
+        signUpPage.signUpForm("Automate","tte9009@yahoo.com");
         signUpPage.clickSignUpbutton();
     }
 
@@ -46,7 +46,7 @@ public class RegisterUser {
     public void fillAccountInfo (){
         homePage.navigate();
         homePage.clickSignUpButton();
-        signUpPage.signUpForm("Automate","autoe90009@yahoo.com");
+        signUpPage.signUpForm("Automate","auttoe90009@yahoo.com");
         signUpPage.clickSignUpbutton();
         Assert.assertTrue(accountInfo.checkAccountInfoHeader());
         accountInfo.fillAccountDetails();
@@ -57,7 +57,7 @@ public class RegisterUser {
     public void confirmAccount (){
         homePage.navigate();
         homePage.clickSignUpButton();
-        signUpPage.signUpForm("Automate","autommat0@yahoo.com");
+        signUpPage.signUpForm("Automate","auytommat0@yahoo.com");
         signUpPage.clickSignUpbutton();
         accountInfo.fillAccountDetails();
         accountInfo.clickCreateAccountButton();
@@ -69,7 +69,7 @@ public class RegisterUser {
     public void verifyUser (){
         homePage.navigate();
         homePage.clickSignUpButton();
-        signUpPage.signUpForm("Automate","autoomte900@yahoo.com");
+        signUpPage.signUpForm("Automate","autoomte0900@yahoo.com");
         signUpPage.clickSignUpbutton();
         accountInfo.fillAccountDetails();
         accountInfo.clickCreateAccountButton();
@@ -82,7 +82,7 @@ public class RegisterUser {
     public void deleteUser(){
         homePage.navigate();
         homePage.clickSignUpButton();
-        signUpPage.signUpForm("Automate","atommate00@yahoo.com");
+        signUpPage.signUpForm("Automate","atomrmate00@yahoo.com");
         signUpPage.clickSignUpbutton();
         accountInfo.fillAccountDetails();
         accountInfo.clickCreateAccountButton();
@@ -96,7 +96,7 @@ public class RegisterUser {
     public void before() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
         homePage = new Home(driver);
         signUpPage =  new  Signup(driver);
