@@ -1,4 +1,4 @@
-package loginUserWithCorrectEmailAndPasswordTest;
+package loginTest;
 
 import loginUserWithCorrectEmailAndPasswordPages.DeleteUser;
 import loginUserWithCorrectEmailAndPasswordPages.HomeAfterLogin;
@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import java.time.Duration;
 
-public class LoginUserWithCorrectEmailAndPassword {
+public class LoginUserWithCorrectEmailAndPasswordTC2 {
     WebDriver driver;
     LoginHome homePage ;
     Login LoginPage;
