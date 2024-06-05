@@ -17,7 +17,7 @@ public class HomeAfterLogin {
         return driver.findElement(loggedAs).isDisplayed();
     }
     public void clickDeleteButton (){
-        By deleteButton = By.xpath(" //a[@href='/delete_account']");
+        By deleteButton = By.xpath("//a[@href='/delete_account']");
         driver.findElement(deleteButton).click();
 
     }

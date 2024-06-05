@@ -1,4 +1,4 @@
-package loginTest;
+package loginTests;
 
 import loginUserWithCorrectEmailAndPasswordPages.DeleteUser;
 import loginUserWithCorrectEmailAndPasswordPages.HomeAfterLogin;
@@ -39,7 +39,7 @@ public class LoginUserWithCorrectEmailAndPasswordTC2 {
     public void verifyUser (){
         homePage.navigate();
         homePage.clickLoginButton();
-        LoginPage.loginForm("Test1@TestTest.com","TestTestTest");
+        LoginPage.loginForm("Testlogout@Testlogout.com","123456");
         LoginPage.clickLoginButton();
         Assert.assertTrue(homeAfterLoginPage.verifyUser());
         homeAfterLoginPage.clickDeleteButton();
@@ -48,7 +48,7 @@ public class LoginUserWithCorrectEmailAndPasswordTC2 {
     public void deleteUser(){
         homePage.navigate();
         homePage.clickLoginButton();
-        LoginPage.loginForm("Test13@TestTest.com","TestTestTest");
+        LoginPage.loginForm("Test0@TestTest1.com","Automate");
         LoginPage.clickLoginButton();
         homeAfterLoginPage.clickDeleteButton();
         Assert.assertTrue(deletePage.checkDeleteMessage());

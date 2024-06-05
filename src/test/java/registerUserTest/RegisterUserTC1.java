@@ -38,7 +38,7 @@ public class RegisterUserTC1 {
         homePage.navigate();
         homePage.clickSignUpButton();
         Assert.assertEquals(signUpPage.checkSignUptext(),"New User Signup!");
-        signUpPage.signUpForm("Automate","tte9009@yahoo.com");
+        signUpPage.signUpForm("Automate","Test0@TestTest1.com");
         signUpPage.clickSignUpbutton();
     }
 
@@ -46,7 +46,7 @@ public class RegisterUserTC1 {
     public void fillAccountInfo (){
         homePage.navigate();
         homePage.clickSignUpButton();
-        signUpPage.signUpForm("Automate","auttoe90009@yahoo.com");
+        signUpPage.signUpForm("Automate","Test2@TestTest1.com");
         signUpPage.clickSignUpbutton();
         Assert.assertTrue(accountInfo.checkAccountInfoHeader());
         accountInfo.fillAccountDetails();
@@ -57,7 +57,7 @@ public class RegisterUserTC1 {
     public void confirmAccount (){
         homePage.navigate();
         homePage.clickSignUpButton();
-        signUpPage.signUpForm("Automate","auytommat0@yahoo.com");
+        signUpPage.signUpForm("Automate","Test3@TestTest1.com");
         signUpPage.clickSignUpbutton();
         accountInfo.fillAccountDetails();
         accountInfo.clickCreateAccountButton();
@@ -69,7 +69,7 @@ public class RegisterUserTC1 {
     public void verifyUser (){
         homePage.navigate();
         homePage.clickSignUpButton();
-        signUpPage.signUpForm("Automate","autoomte0900@yahoo.com");
+        signUpPage.signUpForm("Automate","Test4@TestTest1.com");
         signUpPage.clickSignUpbutton();
         accountInfo.fillAccountDetails();
         accountInfo.clickCreateAccountButton();
@@ -82,7 +82,7 @@ public class RegisterUserTC1 {
     public void deleteUser(){
         homePage.navigate();
         homePage.clickSignUpButton();
-        signUpPage.signUpForm("Automate","atomrmate00@yahoo.com");
+        signUpPage.signUpForm("Automate","Test5@TestTest1.com");
         signUpPage.clickSignUpbutton();
         accountInfo.fillAccountDetails();
         accountInfo.clickCreateAccountButton();

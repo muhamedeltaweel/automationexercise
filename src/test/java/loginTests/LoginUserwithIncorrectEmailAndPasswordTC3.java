@@ -1,4 +1,4 @@
-package loginTest;
+package loginTests;
 
 import loginUserwithIncorrectEmailAndPasswordPages.Login;
 import loginUserwithIncorrectEmailAndPasswordPages.LoginHome;
