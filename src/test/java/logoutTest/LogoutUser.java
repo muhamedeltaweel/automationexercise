@@ -1,8 +1,8 @@
 package logoutTest;
 
-import LogoutPages.Home;
-import LogoutPages.HomeAfterLogin;
-import LogoutPages.Login;
+import logoutPages.Home;
+import logoutPages.HomeAfterLogin;
+import logoutPages.Login;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
