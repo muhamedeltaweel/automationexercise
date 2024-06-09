@@ -1,4 +1,4 @@
-package registerUserTest;
+package registerUserTests;
 
 import registerUserPages.AccountInfo;
 import registerUserPages.Confirmation;
